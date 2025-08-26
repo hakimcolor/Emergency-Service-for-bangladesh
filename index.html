@@ -22,10 +22,13 @@
 
       <div class="flex items-center gap-4">
         <button
+          id="love-addd"
           class="flex items-center gap-1 bg-[#f5fff6] font-bold px-6 rounded-2xl py-2"
         >
-          0 <img class="w-5 h-5" src="./assets/heart.png" alt="Heart" />
+          <span id="love-count">0</span>
+          <img class="w-5 h-5" src="./assets/heart.png" alt="Heart" />
         </button>
+
         <button
           class="flex items-center gap-1 bg-[#f5fff6] font-bold px-6 py-2 rounded-2xl"
         >
@@ -48,10 +51,8 @@
       </p>
     </section>
     <!-- meainsection -->
-    <main
-      class="flex items-center  justify-center  gap-x-5 mt-5 pb-20"
-    >
-    <div class="items-center justify-center"></div>
+    <main class="flex items-center justify-center gap-x-5 mt-5 pb-20">
+      <div class="items-center justify-center"></div>
       <div>
         <!-- firstone -->
         <div class="flex gap-x-5 mt-5">
@@ -62,21 +63,21 @@
               <img
                 src="./assets/emergency.png"
                 alt="Help Icon"
-                class="w-12 h-12 rounded-lg"
+                class="w-12 h-12 bg-[#ffe3e2] p-2 rounded-xl"
               />
 
-              <i
-                class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"
-              ></i>
+              <div class="hert">
+                <i class="fa-regular fa-heart text-xl cursor-pointer"></i>
+              </div>
             </div>
 
             <div class="mt-4">
-              <h1 class="text-xl font-bold">Women & Child Helpline</h1>
-              <p class="text-gray-500">Women & Child Helpline</p>
-              <h2 class="text-3xl font-semibold mt-2">109</h2>
+              <h1 class="text-xl font-bold">National Emergency Number</h1>
+              <p class="text-gray-500">National Emergency</p>
+              <h2 class="text-3xl font-semibold mt-2">999</h2>
               <span
                 class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 mt-2 inline-block"
-                >Help</span
+                >All</span
               >
             </div>
 
@@ -98,23 +99,23 @@
           >
             <div class="flex justify-between items-center">
               <img
-                src="./assets/emergency.png"
+                src="./assets/police.png"
                 alt="Help Icon"
-                class="w-12 h-12 rounded-lg"
+                class="w-12 h-12 bg-[#dfefff] p-2 rounded-xl"
               />
 
-              <i
-                class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"
-              ></i>
+              <div class="hert">
+                <i class="fa-regular fa-heart text-xl cursor-pointer"></i>
+              </div>
             </div>
 
             <div class="mt-4">
-              <h1 class="text-xl font-bold">Women & Child Helpline</h1>
-              <p class="text-gray-500">Women & Child Helpline</p>
-              <h2 class="text-3xl font-semibold mt-2">109</h2>
+              <h1 class="text-xl font-bold">Police Helpline Number</h1>
+              <p class="text-gray-500">Police</p>
+              <h2 class="text-3xl font-semibold mt-2">999</h2>
               <span
                 class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 mt-2 inline-block"
-                >Help</span
+                >Police</span
               >
             </div>
 
@@ -136,23 +137,23 @@
           >
             <div class="flex justify-between items-center">
               <img
-                src="./assets/emergency.png"
+                src="./assets/fire-service.png"
                 alt="Help Icon"
-                class="w-12 h-12 rounded-lg"
+                class="w-12 h-12 bg-[#ffe3e2] p-2 rounded-xl"
               />
 
-              <i
-                class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"
-              ></i>
+              <div class="hert">
+                <i class="fa-regular fa-heart text-xl cursor-pointer"></i>
+              </div>
             </div>
 
             <div class="mt-4">
-              <h1 class="text-xl font-bold">Women & Child Helpline</h1>
-              <p class="text-gray-500">Women & Child Helpline</p>
-              <h2 class="text-3xl font-semibold mt-2">109</h2>
+              <h1 class="text-xl font-bold">Fire Service Number</h1>
+              <p class="text-gray-500">Rire Service</p>
+              <h2 class="text-3xl font-semibold mt-2">999</h2>
               <span
                 class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 mt-2 inline-block"
-                >Help</span
+                >Fire</span
               >
             </div>
 
@@ -177,14 +178,52 @@
           >
             <div class="flex justify-between items-center">
               <img
-                src="./assets/emergency.png"
+                src="./assets/ambulance.png"
                 alt="Help Icon"
-                class="w-12 h-12 rounded-lg"
+                class="w-12 h-12 bg-[#ffe3e2] p-2 rounded-xl"
               />
 
-              <i
-                class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"
-              ></i>
+              <div class="hert">
+                <i class="fa-regular fa-heart text-xl cursor-pointer"></i>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <h1 class="text-xl font-bold">Ambulance Service</h1>
+              <p class="text-gray-500">Ambulance</p>
+              <h2 class="text-3xl font-semibold mt-2">1994-999999</h2>
+              <span
+                class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 mt-2 inline-block"
+                >Health</span
+              >
+            </div>
+
+            <div class="flex mt-6 gap-4">
+              <button
+                class="flex-1 px-4 py-2 border rounded-lg text-gray-700 flex justify-center items-center gap-2"
+              >
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+              <button
+                class="flex-1 px-4 py-2 bg-green-500 text-white rounded-lg flex justify-center items-center gap-2"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[380px] h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+          >
+            <div class="flex justify-between items-center">
+              <img
+                src="./assets/emergency.png"
+                alt="Help Icon"
+                class="w-12 h-12 bg-[#ffe3e2] p-2 rounded-xl"
+              />
+
+              <div class="hert">
+                <i class="fa-regular fa-heart text-xl cursor-pointer"></i>
+              </div>
             </div>
 
             <div class="mt-4">
@@ -217,59 +256,21 @@
               <img
                 src="./assets/emergency.png"
                 alt="Help Icon"
-                class="w-12 h-12 rounded-lg"
+                class="w-12 h-12 bg-[#ffe3e2] p-2 rounded-xl"
               />
 
-              <i
-                class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"
-              ></i>
+              <div class="hert">
+                <i class="fa-regular fa-heart text-xl cursor-pointer"></i>
+              </div>
             </div>
 
             <div class="mt-4">
-              <h1 class="text-xl font-bold">Women & Child Helpline</h1>
-              <p class="text-gray-500">Women & Child Helpline</p>
-              <h2 class="text-3xl font-semibold mt-2">109</h2>
+              <h1 class="text-xl font-bold">Anti-Corruption Helpline</h1>
+              <p class="text-gray-500">Anti-Corruption</p>
+              <h2 class="text-3xl font-semibold mt-2">106</h2>
               <span
                 class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 mt-2 inline-block"
-                >Help</span
-              >
-            </div>
-
-            <div class="flex mt-6 gap-4">
-              <button
-                class="flex-1 px-4 py-2 border rounded-lg text-gray-700 flex justify-center items-center gap-2"
-              >
-                <i class="fa-regular fa-copy"></i> Copy
-              </button>
-              <button
-                class="flex-1 px-4 py-2 bg-green-500 text-white rounded-lg flex justify-center items-center gap-2"
-              >
-                <i class="fa-solid fa-phone"></i> Call
-              </button>
-            </div>
-          </div>
-          <div
-            class="w-[380px] h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
-          >
-            <div class="flex justify-between items-center">
-              <img
-                src="./assets/emergency.png"
-                alt="Help Icon"
-                class="w-12 h-12 rounded-lg"
-              />
-
-              <i
-                class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"
-              ></i>
-            </div>
-
-            <div class="mt-4">
-              <h1 class="text-xl font-bold">Women & Child Helpline</h1>
-              <p class="text-gray-500">Women & Child Helpline</p>
-              <h2 class="text-3xl font-semibold mt-2">109</h2>
-              <span
-                class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 mt-2 inline-block"
-                >Help</span
+                >Govt.</span
               >
             </div>
 
@@ -296,21 +297,21 @@
               <img
                 src="./assets/emergency.png"
                 alt="Help Icon"
-                class="w-12 h-12 rounded-lg"
+                class="w-12 h-12 bg-[#ffe3e2] p-2 rounded-xl"
               />
 
-              <i
-                class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"
-              ></i>
+              <div class="hert">
+                <i class="fa-regular fa-heart text-xl cursor-pointer"></i>
+              </div>
             </div>
 
             <div class="mt-4">
-              <h1 class="text-xl font-bold">Women & Child Helpline</h1>
-              <p class="text-gray-500">Women & Child Helpline</p>
-              <h2 class="text-3xl font-semibold mt-2">109</h2>
+              <h1 class="text-xl font-bold">Electricity Helpline</h1>
+              <p class="text-gray-500">Electricity Outage</p>
+              <h2 class="text-3xl font-semibold mt-2">16216</h2>
               <span
                 class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 mt-2 inline-block"
-                >Help</span
+                >Electricity</span
               >
             </div>
 
@@ -334,21 +335,21 @@
               <img
                 src="./assets/emergency.png"
                 alt="Help Icon"
-                class="w-12 h-12 rounded-lg"
+                class="w-12 h-12 bg-[#ffe3e2] p-2 rounded-xl"
               />
 
-              <i
-                class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"
-              ></i>
+              <div class="hert">
+                <i class="fa-regular fa-heart text-xl cursor-pointer"></i>
+              </div>
             </div>
 
             <div class="mt-4">
-              <h1 class="text-xl font-bold">Women & Child Helpline</h1>
-              <p class="text-gray-500">Women & Child Helpline</p>
-              <h2 class="text-3xl font-semibold mt-2">109</h2>
+              <h1 class="text-xl font-bold">Brac Helpline</h1>
+              <p class="text-gray-500">Brac</p>
+              <h2 class="text-3xl font-semibold mt-2">16445</h2>
               <span
                 class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 mt-2 inline-block"
-                >Help</span
+                >NGO</span
               >
             </div>
 
@@ -372,21 +373,21 @@
               <img
                 src="./assets/emergency.png"
                 alt="Help Icon"
-                class="w-12 h-12 rounded-lg"
+                class="w-12 h-12 bg-[#ffe3e2] p-2 rounded-xl"
               />
 
-              <i
-                class="fa-regular fa-heart text-gray-500 text-xl cursor-pointer"
-              ></i>
+              <div class="hert">
+                <i class="fa-regular fa-heart text-xl cursor-pointer"></i>
+              </div>
             </div>
 
             <div class="mt-4">
-              <h1 class="text-xl font-bold">Women & Child Helpline</h1>
-              <p class="text-gray-500">Women & Child Helpline</p>
-              <h2 class="text-3xl font-semibold mt-2">109</h2>
+              <h1 class="text-xl font-bold">Bangladesh Railway Helpline</h1>
+              <p class="text-gray-500">Bangladesh Railway</p>
+              <h2 class="text-3xl font-semibold mt-2">163</h2>
               <span
                 class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 mt-2 inline-block"
-                >Help</span
+                >Travel</span
               >
             </div>
 
@@ -405,9 +406,17 @@
           </div>
         </div>
       </div>
-      <aside class=" w-[380px] h-[1059px] p-4 mt-5 rounded-xl shadow-lg bg-white">
-        <div>hello</div>
+      <aside
+        class="w-[380px] h-[1059px] p-4 mt-5 rounded-xl shadow-lg bg-white"
+      >
+        <div class="flex p-2 justify-between items-center">
+          <div><i class="fa-regular fa-clock"></i> Call History</div>
+          <button class="bg-[#00a63e] px-6 py-2 rounded-2xl text-white">
+            Clear
+          </button>
+        </div>
       </aside>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
