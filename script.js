@@ -5,7 +5,7 @@ hearts.forEach((hrt) => {
   hrt.addEventListener('click', () => {
     let current = Number(lovCount.innerText);
     lovCount.innerText = current + 1;
-    hrt.style.color = 'red';
+    // hrt.style.color = 'red';
   });
 });
 let coin = document.getElementById('coin');
