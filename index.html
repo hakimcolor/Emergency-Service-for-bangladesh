@@ -12,60 +12,85 @@
   </head>
 
   <body class="bg-[#f5fff6]">
-    <!-- navber -->
-    <nav class="p-4 px-20 bg-white flex items-center justify-between">
+    <nav
+      class="p-4 md:px-20 bg-white flex flex-wrap items-center justify-between"
+    >
+      <!-- Left Logo Section -->
       <div class="flex items-center gap-3">
-        <img class="w-12 h-12" src="./assets/logo.png" alt="Logo" />
-        <h1 class="text-[#006747] font-bold text-xl">
-          Emergency <br />Service
+        <img
+          class="w-10 h-10 md:w-12 md:h-12"
+          src="./assets/logo.png"
+          alt="Logo"
+        />
+        <h1 class="text-[#006747] font-bold text-lg md:text-xl leading-tight">
+          Emergency <br  />
+          Service
         </h1>
       </div>
 
-      <div class="flex items-center gap-4">
+      <!-- Right Buttons -->
+      <div class="flex items-center gap-2 sm:gap-4 mt-3 md:mt-0 flex-wrap">
         <button
           id="love-addd"
-          class="flex items-center gap-1 bg-[#f5fff6] font-bold px-6 rounded-2xl py-2"
+          class="flex items-center gap-1 bg-[#f5fff6] font-bold px-4 md:px-6 py-2 rounded-2xl text-sm md:text-base"
         >
           <span id="love-count">0</span>
-          <img class="w-5 h-5" src="./assets/heart.png" alt="Heart" />
+          <img
+            class="w-4 h-4 md:w-5 md:h-5"
+            src="./assets/heart.png"
+            alt="Heart"
+          />
         </button>
 
         <button
-          class="flex items-center gap-1 bg-[#f5fff6] font-bold px-6 py-2 rounded-2xl"
+          class="flex items-center gap-1 bg-[#f5fff6] font-bold px-4 md:px-6 py-2 rounded-2xl text-sm md:text-base"
         >
           <span id="coin">100 </span>
-          <img class="w-5 h-5" src="./assets/coin.png" alt="Coin" />
+          <img
+            class="w-4 h-4 md:w-5 md:h-5"
+            src="./assets/coin.png"
+            alt="Coin"
+          />
         </button>
-        <button class="bg-[#00a63e] text-white px-6 py-2 rounded-3xl">
+
+        <button
+          class="bg-[#00a63e] text-white px-4 md:px-6 py-2 rounded-3xl text-sm md:text-base"
+        >
           <span id="cpy">0</span> Copy
         </button>
       </div>
     </nav>
+
     <!-- bannersection -->
+
     <section
-      class="w-full h-[239px] bg-gradient-to-r from-[#013726] via-[#016344] to-[#013726] text-center flex flex-col items-center justify-center gap-2 p-4"
+      class="w-full h-auto md:h-[239px] bg-gradient-to-r from-[#013726] via-[#016344] to-[#013726] text-center flex flex-col items-center justify-center gap-2 p-4"
     >
       <img
-        class="w-[99px] h-[99px] mb-2"
+        class="w-20 h-20 md:w-[99px] md:h-[99px] mb-2"
         src="./assets/logo-dark.png"
         alt="Logo"
       />
-      <h1 class="font-bold text-[40px] text-white">
+      <h1
+        class="font-bold text-2xl sm:text-3xl md:text-[40px] text-white leading-snug"
+      >
         Emergency Service Directory
       </h1>
-      <p class="font-semibold text-[14px] text-white max-w-3xl">
+      <p
+        class="font-semibold text-sm sm:text-base md:text-[14px] text-white max-w-lg sm:max-w-2xl md:max-w-3xl"
+      >
         Government Emergency Services at Your Fingertip – A Project by
         Government of the People’s Republic of Bangladesh
       </p>
     </section>
+
     <!-- meainsection -->
-    <main class="flex items-center justify-center gap-x-5 mt-5 pb-20">
-      <div class="items-center justify-center"></div>
-      <div>
+    <main class="lg:flex items-center justify-center gap-x-5 mt-5 pb-20">
+      <div class="flex items-center justify-center flex-col">
         <!-- firstone -->
-        <div class="flex gap-x-5 mt-5">
+        <div class="md:flex gap-x-5 md:mt-5  ">
           <div
-            class="w-[380px] h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+            class="w-[320px] mt-5 md:mt-0 h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
           >
             <div class="flex justify-between items-center">
               <img
@@ -103,7 +128,7 @@
             </div>
           </div>
           <div
-            class="w-[380px] h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+            class="w-[320px] mt-5 md:mt-0 h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
           >
             <div class="flex justify-between items-center">
               <img
@@ -141,13 +166,13 @@
             </div>
           </div>
           <div
-            class="w-[380px] h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+            class="w-[320px] mt-5 md:mt-0 h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
           >
             <div class="flex justify-between items-center">
               <img
                 src="./assets/fire-service.png"
                 alt="Help Icon"
-                class="w-12 h-12 bg-[#ffe3e2] p-2 rounded-xl"
+                class="w-12 h-12 bg-[#ffwsa4e2] p-2 rounded-xl"
               />
 
               <div class="hert">
@@ -179,10 +204,11 @@
             </div>
           </div>
         </div>
+
         <!-- 2ndone -->
-        <div class="flex gap-x-5 mt-5">
+        <div class="md:flex gap-x-5 md:mt-5 ">
           <div
-            class="w-[380px] h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+            class="w-[320px] mt-5 md:mt-0 h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
           >
             <div class="flex justify-between items-center">
               <img
@@ -220,7 +246,7 @@
             </div>
           </div>
           <div
-            class="w-[380px] h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+            class="w-[320px] mt-5 md:mt-0 h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
           >
             <div class="flex justify-between items-center">
               <img
@@ -258,7 +284,7 @@
             </div>
           </div>
           <div
-            class="w-[380px] h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+            class="w-[320px] mt-5 md:mt-0 h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
           >
             <div class="flex justify-between items-center">
               <img
@@ -297,9 +323,9 @@
           </div>
         </div>
         <!-- lastone -->
-        <div class="flex gap-x-5 mt-5">
+        <div class="md:flex gap-x-5 md:mt-5 ">
           <div
-            class="w-[380px] h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+            class="w-[320px] mt-5 md:mt-0 h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
           >
             <div class="flex justify-between items-center">
               <img
@@ -337,7 +363,7 @@
             </div>
           </div>
           <div
-            class="w-[380px] h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+            class="w-[320px] mt-5 md:mt-0 h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
           >
             <div class="flex justify-between items-center">
               <img
@@ -375,7 +401,7 @@
             </div>
           </div>
           <div
-            class="w-[380px] h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
+            class="w-[320px] mt-5 md:mt-0 h-[340px] bg-white rounded-xl shadow-lg p-4 flex flex-col justify-between"
           >
             <div class="flex justify-between items-center">
               <img
@@ -414,20 +440,22 @@
           </div>
         </div>
       </div>
-      <aside
-        class="w-[380px] h-[1059px] p-4 mt-5 rounded-xl shadow-lg bg-white"
-      >
-        <div class="flex p-2 justify-between items-center">
-          <div><i class="fa-regular fa-clock"></i> Call History</div>
-          <button
-            id="clear"
-            class="bg-[#00a63e] px-6 py-2 rounded-3xl text-white hover:opacity-50 hover:bg-gray-700 duration-200"
-          >
-            Clear
-          </button>
-        </div>
-        <div class="display"></div>
-      </aside>
+      <div class="flex items-center justify-center flex-col">
+        <aside
+          class="md:w-[320px] md:h-[1059px] w-[320px] h-[600px] p-4 mt-5 rounded-xl shadow-lg bg-white"
+        >
+          <div class="flex p-2 justify-between items-center">
+            <div><i class="fa-regular fa-clock"></i> Call History</div>
+            <button
+              id="clear"
+              class="bg-[#00a63e] px-6 py-2 rounded-3xl text-white hover:opacity-50 hover:bg-gray-700 duration-200"
+            >
+              Clear
+            </button>
+          </div>
+          <div class="display"></div>
+        </aside>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>
